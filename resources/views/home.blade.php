@@ -1,3 +1,5 @@
+<!-- NICASIO MEDINA MIGUEL ANGEL -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
 </head>
 <body>
 
-    <h1>Panel de Inicio </h1>
+    <h1>Welcome to Home </h1>
     
 </body>
 </html> 
