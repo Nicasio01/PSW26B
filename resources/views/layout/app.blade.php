@@ -28,12 +28,24 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-neutral-primary">
             <li>
+                 <a href="{{ route('roles.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Roles</a>
+            </li>
+            <li>
+            <a href="{{ route('usuarios.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Usuarios</a>
+            </li>
+            <li>
+            <a href="{{ route('perfiles.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Perfiles</a>
+            </li>
+            <li>
             <a href="{{ route('categorias.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Categorías</a>
             </li>
             <li>
-            <a href="{{ route('ofertas.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Ofertas</a>
+            <a href="{{ route('ofertas.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Ofertas de Empleo</a>
             </li>
-            </ul>
+            <li>
+            <a href="{{ route('postulaciones.index') }}" class="block py-2 px-3 text-heading rounded hover:text-brand">Postulaciones</a>
+            </li>
+   </ul>
     </div>
   </div>
 </nav>
