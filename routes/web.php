@@ -13,7 +13,7 @@ Route::view('/home', '/home');
 Route::view('/layout', '/layout/app');
 Route::view('/catalogo', '/catalogo/empleos');
 
-Route::get('/', function () { return view('layout'); });
+Route::get('/', function () { return view('layout.app'); });
 Route::get('/categorias', function () { return view('categorias.index'); })->name('categorias.index');
 Route::get('/categorias/crear', function () { return view('categorias.create'); })->name('categorias.create');
 Route::get('/ofertas', function () { return view('ofertas.index'); })->name('ofertas.index');

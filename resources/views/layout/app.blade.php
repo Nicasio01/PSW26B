@@ -12,14 +12,14 @@
 
 </head>
 <body>
-
+<body class="flex flex-col min-h-screen bg-gray-50">
     {{-- ENCABEZADO --}}
     
 <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
-        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Flowbite</span>
+    <a href="{{ url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Bolsa Empleo Logo" />
+    <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-900">Bolsa de Empleo</span>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -53,7 +53,9 @@
 
     {{--CONTENIDO --}}
 
-    @yield('contenido') 
+    <main class="flex-grow pt-20"> 
+        @yield('contenido')
+    </main>
 
     {{--PIE DE PAGINA --}}
     
@@ -61,9 +63,9 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" class="flex items-center">
-                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-7 me-3" alt="FlowBite Logo" />
-                  <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
+              <a href="{{ url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Bolsa Empleo Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-900">Bolsa de Empleo</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
