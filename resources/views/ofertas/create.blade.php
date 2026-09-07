@@ -6,7 +6,7 @@
 
     <form action="#" method="POST">
         <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <!-- Cajas de texto estándar -->
+            
             <div>
                 <label for="titulo" class="block mb-2 text-sm font-medium text-gray-900">Título de la Vacante</label>
                 <input type="text" id="titulo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ej. Desarrollador PHP" required>
@@ -17,7 +17,6 @@
                 <input type="text" id="empresa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ej. Sermex Consultores" required>
             </div>
 
-            <!-- Campo numérico -->
             <div>
                 <label for="salario" class="block mb-2 text-sm font-medium text-gray-900">Salario Mensual</label>
                 <div class="relative">
@@ -28,13 +27,11 @@
                 </div>
             </div>
 
-            <!-- Selector de fecha -->
             <div>
                 <label for="fecha_publicacion" class="block mb-2 text-sm font-medium text-gray-900">Fecha de Publicación</label>
                 <input type="date" id="fecha_publicacion" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
             </div>
 
-            <!-- Listas desplegables -->
             <div>
                 <label for="id_categoria" class="block mb-2 text-sm font-medium text-gray-900">Categoría</label>
                 <select id="id_categoria" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
@@ -59,13 +56,11 @@
             <input type="text" id="ubicacion" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mb-6" placeholder="Ej. El Salto, Jalisco" required>
         </div>
 
-        <!-- Área de texto -->
         <div class="mb-6">
             <label for="descripcion" class="block mb-2 text-sm font-medium text-gray-900">Descripción Detallada</label>
             <textarea id="descripcion" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Escribe los requisitos, responsabilidades y beneficios de la vacante..."></textarea>
         </div>
 
-        <!-- Casilla de verificación -->
         <div class="flex items-start mb-6">
             <div class="flex items-center h-5">
                 <input id="destacada" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300">
@@ -73,7 +68,6 @@
             <label for="destacada" class="ml-2 text-sm font-medium text-gray-900">Marcar como oferta destacada</label>
         </div>
 
-        <!-- Botones de opción (Radio Buttons) para Estado -->
         <div class="mb-6">
             <span class="block mb-2 text-sm font-medium text-gray-900">Estado de la Vacante</span>
             <div class="flex items-center space-x-4">
